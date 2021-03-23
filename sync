@@ -19,3 +19,6 @@ git clone https://github.com/ArrowOS-Devices/android_device_xiaomi_miatoll.git -
 cd device/xiaomi/sm6250-common && mv arrow.dependencies lighthouse.dependencies && cd ../../..
 cd device/xiaomi/miatoll && mv arrow.dependencies lighthouse.dependencies && rm -rf AndroidProducts.mk arrow_miatoll.mk && wget https://ghostmirror.hitesh920.workers.dev/lighthouse_miatoll.mk && wget https://ghostmirror.hitesh920.workers.dev/AndroidProducts.mk && cd ../../..
 ls
+
+#avb vbmeta 2 
+cd device/xiaomi/sm6250-common && rm -rf BoardConfigCommon.mk && wget https://ghostmirror.hitesh920.workers.dev/BoardConfigCommon.mk
