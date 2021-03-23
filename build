@@ -17,9 +17,9 @@ up(){
 }
 
 make_metalava(){
-	mka api-stubs-docs -j20
-	mka system-api-stubs-docs -j20
-	mka test-api-stubs-docs -j20
+	mka api-stubs-docs
+	mka system-api-stubs-docs
+	mka test-api-stubs-docs
 }
 
 make_rom(){
