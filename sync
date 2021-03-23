@@ -21,4 +21,4 @@ cd device/xiaomi/miatoll && mv arrow.dependencies lighthouse.dependencies && rm 
 ls
 
 #avb vbmeta 2 
-cd device/xiaomi/sm6250-common && rm -rf BoardConfigCommon.mk && wget https://ghostmirror.hitesh920.workers.dev/BoardConfigCommon.mk
+cd device/xiaomi/sm6250-common && rm -rf BoardConfigCommon.mk && wget https://ghostmirror.hitesh920.workers.dev/BoardConfigCommon.mk && cd ../../..
