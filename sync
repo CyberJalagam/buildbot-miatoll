@@ -14,9 +14,7 @@ git config --global user.email evanferrao@gmail.com
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again with -j8
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
-git clone https://github.com/kardebayan/device_oppo_CPH1859.git device/oppo/CPH1859
-git clone https://github.com/kardebayan/vendor_oppo_CPH1859.git vendor/oppo/CPH1859
-git clone https://github.com/kardebayan/android_kernel_oppo_mt6771.git kernel/oppo/mt6771
-git clone https://github.com/CPH1859/prebuilt_clang-6.0.2 prebuilts/clang/host/linux-x86/clang-r316199
+git clone https://github.com/StagOS-Devices/device_oppo_CPH1859.git device/oppo/CPH1859
+git clone https://github.com/StagOS-Devices/vendor_oppo_CPH1859.git vendor/oppo/CPH1859
 rm -rf vendor/nxp
-rm -rf device/mediatek/sepolicy && git clone https://github.com/bluelytning/device_mediatek_sepolicy.git device/mediatek/sepolicy
+

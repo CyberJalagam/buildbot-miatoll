@@ -3,6 +3,7 @@ cd /tmp/rom
 rm -rf .repo &
 
 source build/envsetup.sh
+export BUILD_TYPE=OFFICIAL
 lunch stag_CPH1859-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
