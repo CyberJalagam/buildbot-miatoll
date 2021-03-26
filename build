@@ -1,10 +1,10 @@
 #!/bin/bash
-cd /tmp/rom # Depends on where source got synced
-rm -rf .repo & # lets remove unnecessary things, so that no storage issue can occur
+cd /tmp/rom
+rm -rf .repo &
 
-# Normal build steps
-. build/envsetup.sh
-lunch lighthouse_miatoll-userdebug
+source build/envsetup.sh
+export BUILD_TYPE=OFFICIAL
+lunch stag_CPH1859-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -24,7 +24,7 @@ make_metalava(){
 
 make_rom(){
 	make bacon -j20
-	zip=$(up out/target/product/miatoll/*zip)
+	zip=$(up out/target/product/CPH1859/*zip)
 	echo " "
 	echo "$zip"
 }
