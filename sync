@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt install wget
-MANIFEST=git://github.com/StagOS/manifest.git
-BRANCH=r11
+MANIFEST=git://github.com/ProjectSakura/manifest.git
+BRANCH=11
 
 mkdir -p /tmp/rom
 cd /tmp/rom
@@ -14,7 +14,7 @@ git config --global user.email evanferrao@gmail.com
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again with -j8
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
-git clone https://github.com/StagOS-Devices/device_oppo_CPH1859.git device/oppo/CPH1859
+git clone https://github.com/CPH1859/android_device_oppo_CPH1859.git device/oppo/CPH1859
 git clone https://github.com/StagOS-Devices/vendor_oppo_CPH1859.git vendor/oppo/CPH1859
-rm -rf vendor/nxp
+
 
