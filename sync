@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt install wget
-MANIFEST=git://github.com/ProjectSakura/manifest.git
+MANIFEST=git://github.com/ProjectSakura/android.git
 BRANCH=11
 
 mkdir -p /tmp/rom
