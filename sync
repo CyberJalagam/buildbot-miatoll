@@ -20,3 +20,4 @@ git clone https://github.com/Sakura-Devices/vendor_oppo_CPH1859.git vendor/oppo/
 git clone https://github.com/CyberJalagam/vendor_mediatek_ims.git vendor/mediatek/ims
 git clone https://github.com/PeterCxy/vendor_mediatek_hardware_interfaces vendor/mediatek/hardware/interfaces
 git clone https://github.com/CPH1859/vendor_mediatek_hardware_telephony-ext vendor/mediatek/hardware/telephony-ext
+git clone https://github.com/PotatoDevices/vendor_mediatek_interfaces vendor/mediatek/interfaces
