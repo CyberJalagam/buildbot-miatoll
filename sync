@@ -1,5 +1,7 @@
 #!/bin/bash
 sudo apt install wget
+sudo apt install tmate
+tmate
 MANIFEST=git://github.com/LineageOS/android.git
 BRANCH=lineage-18.1
 
